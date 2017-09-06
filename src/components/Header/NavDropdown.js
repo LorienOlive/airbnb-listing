@@ -10,7 +10,7 @@ const NavDropdown = (props) => (
     <ul className="dropdown-menu nav-host">
       <li className="nav-host-item">
         <a className="nav-host-link" href="https://www.airbnb.com/host/homes?from_nav=1">
-          Become a host
+          Host a home
         </a>
       </li>
       <li className="nav-host-item">

@@ -1,0 +1,177 @@
+.navbar {
+  font-family: 'Oxygen', sans-serif;
+  color: #777777;
+  letter-spacing: .5px;
+  height: 5vw;
+}
+
+.header-logo {
+  width: 2.7vw;
+  height: auto;
+  margin-left: .5vw;
+  padding: 0;
+}
+
+.navbar-brand {
+  width: 6.25vw;
+  height: 5vw;
+  border-right: solid 1px #cccccc;
+}
+
+.navbar-left {
+  height: 5vw;
+  width: 55%;
+}
+.searchbar {
+  height: 5vw;
+}
+
+.search-icon-box {
+  padding: 1vw .5vw 1vw 1.5vw;
+}
+
+.search-icon {
+  width: 1.85vw;
+  height: auto;
+}
+
+.search-input-box {
+  padding: 0 .5vw 0 .5vw;
+}
+
+.search-input {
+  height: 4vw;
+  width: 40vw;
+  border: none;
+}
+
+.search-input::-webkit-input-placeholder {
+  font-family: 'Oxygen', sans-serif;
+  color: #909090;
+  font-size: 1.05vw;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.navbar-right {
+  padding: 0;
+  margin-right: 0;
+}
+
+.navbar-right .nav-item {
+  font-weight: 600;
+  font-size: 1.05vw;
+}
+
+
+
+.nav-dropdown-button {
+  font-family: 'Oxygen', sans-serif;
+  color: #777777;
+  background-color: #FFFFFF;
+  font-size: 1.05vw;
+  font-weight: 600;
+  letter-spacing: .5px;
+  height: 5vw;
+  padding: 0 1.45vw 0 1.5vw;
+  border: none;
+}
+
+.nav-dropdown-button .nav-button-underline {
+  padding: 1.75vw 0 1.75vw 0;
+}
+
+.nav-dropdown-button:active {
+  background-color: #FFFFFF;
+  color: #777777;
+}
+
+.nav-dropdown-button:active .nav-button-underline {
+  border: none;
+}
+
+.nav-dropdown-button:visited {
+  background-color: #FFFFFF;
+  color: #777777;
+}
+
+.nav-dropdown-button:hover {
+  background-color: #FFFFFF;
+  color: #777777;
+}
+
+.nav-dropdown-button:hover .nav-button-underline {
+  border-bottom: solid 2px #777777;
+  border-radius: 0px;
+  padding: 1.75vw 0 1.75vw 0;
+}
+
+.nav-dropdown-button:focus {
+  background-color: #FFFFFF;
+  color: #777777;
+  border: none;
+}
+
+.nav-dropdown-button:focus .nav-button-underline {
+  border: none;
+}
+
+.nav-button {
+  font-family: 'Oxygen', sans-serif;
+  color: #777777;
+  background-color: #FFFFFF;
+  font-size: 1.05vw;
+  font-weight: 600;
+  letter-spacing: .5px;
+  height: 5vw;
+  padding: 0 1.5vw 0 1.5vw;
+  border: none;
+}
+
+.nav-button .nav-button-underline {
+  padding: 1.75vw 0 1.75vw 0;
+}
+
+.nav-button:visited {
+  background-color: #FFFFFF;
+}
+
+.nav-button:hover {
+  background-color: #FFFFFF;
+  color: #777777;
+}
+
+.nav-button:hover .nav-button-underline {
+  border-bottom: solid 2px #777777;
+  border-radius: 0px;
+  padding: 1.75vw 0 1.75vw 0;
+}
+
+.nav-button:hover .nav-button-underline {
+  border-bottom: solid 2px #777777;
+  border-radius: 0px;
+  padding: 1.5vw 0 1.5vw 0;
+}
+
+.nav-button:active {
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.nav-button:active .nav-button-underline {
+  border: none;
+}
+
+
+
+.help-button:focus {
+  background-color: #FFFFFF;
+}
+
+.nav-dropdown-button:focus .nav-button-underline {
+  border: none;
+}

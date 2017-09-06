@@ -1,0 +1,22 @@
+{
+  "host_id": 1,
+  "name": "Luxury Villas",
+  "location": {
+    "city": "Puerto Vallarta",
+    "state": "Jalisco",
+    "country": "Mexico",
+    "latitude": 20.55,
+    "longitude": -105.25
+  },
+  "profile_img": "https://a0.muscache.com/im/pictures/5c660f61-f3f0-4fba-a1bb-7a6ca78556d2.jpg?aki_policy=profile_x_medium",
+  "reviews": 242,
+  "verified": true,
+  "description": "Luxury Villas is a Vacation Rental Company specialized on selected Luxury Villas and Condos with over 15 years of experience, our destinations include Puerto Vallarta, Riviera Nayarit, Mazatlan, Playa del Carmen, Cancun, Cabos, Merida Yucatan, Acapulco and Ixtapa Zihuatanejo. Most of our properties come with full staff and have been personally inspected to offer you nothing but the higher standards.",
+  "languages": [
+    "English",
+    "Español"
+  ],
+  "response_rate": "97%",
+  "response_time": "within a few hours",
+  "total_reviews": 193
+}

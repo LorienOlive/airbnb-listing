@@ -4,9 +4,9 @@ import search from "../../styles/images/search.jpg"
 import "../../styles/Nav.css"
 
 
-const HelpButton = ({showHelpBar}) => (
+const HelpButton = ({ showHelpBar }) => (
   <div>
-    <button type="button" className="nav-button" onClick={showHelpBar}>
+    <button type="button" className="btn nav-button" onClick={showHelpBar}>
       <div className="nav-button-underline">
         Help
       </div>

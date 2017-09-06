@@ -16,7 +16,7 @@ const navigation = (state=initialState, action) => {
     console.log("hide sidebar successful")
       return {
         ...state,
-        hideHelp: false
+        showHelp: false
       }
   }
   return state;

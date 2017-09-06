@@ -3,6 +3,7 @@
   color: #777777;
   letter-spacing: .5px;
   height: 5vw;
+  margin-bottom: 0!important;
 }
 
 .header-logo {
@@ -75,10 +76,11 @@
   font-size: 1.05vw;
   font-weight: 600;
   letter-spacing: .5px;
-  height: 5vw;
+  height: 4.8vw;
   padding: 0 1.45vw 0 1.5vw;
   margin-right:.15vw;
   border: none;
+  border-radius: 0px;
 }
 
 .nav-dropdown-button .nav-button-underline {
@@ -127,10 +129,11 @@
   font-size: 1.05vw;
   font-weight: 600;
   letter-spacing: .5px;
-  height: 5vw;
+  height: 4.8vw;
   padding: 0 1.5vw 0 1.5vw;
-  margin-right:.15vw;
+  margin-right: .15vw;
   border: none;
+  border-radius: 0px;
 }
 
 .nav-button .nav-button-underline {
@@ -138,6 +141,7 @@
 }
 
 .nav-button:visited {
+  color: #777777;
   background-color: #FFFFFF;
   outline: none;
 }
@@ -169,10 +173,6 @@
   outline: none;
 }
 
-.nav-dropdown-button:focus .nav-button-underline {
-  border: none;
-}
-
 .nav-host {
   width: 283px;
   height: 154px;
@@ -181,18 +181,18 @@
 }
 
 .nav-host-item {
-  padding: .55vw 2vw .75vw .25vw;
+  padding: 8px 24px 9px 4px;
 }
 
 .nav-host-link {
   color: #767676!important;
-  font-size: 1.1vw!important;
+  font-size: 13px!important;
   font-weight: 500!important;
   letter-spacing: .5px!important;
   width: 240px!important;
   border-bottom: solid 1.5px #e8e8e8;
-  margin-left: 1vw;
-  padding: 0vw 0vw .9vw 0vw!important;
+  margin-left: 10px;
+  padding: 2px 0 13.5px 0!important;
 }
 
 .nav-host-link:hover {
@@ -207,10 +207,7 @@
   display: block;
   width: 352px;
   height: 100vh;
-  transition: -webkit-transform 0.3s ease-out;
-  will-change: -webkit-transform;
-  transform: translateX(0%);
-  box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 4px;
+  box-shadow: -3px 0 3px 0 rgba(0, 0, 0, 0.05);
   position: absolute;
   z-index: 2;
   right: 0px;

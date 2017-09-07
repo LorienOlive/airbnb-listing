@@ -7,9 +7,11 @@ class ImageWrapper extends Component {
       console.log(mainImage);
       const mainImageStyle = {
         width: "100%",
-        height: "320px",
+        height: "358px",
         backgroundImage: `url(${mainImage})`,
-        backgroundSize: "cover"
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        margin: "none"
       }
       return (
         <div className="main-image-wrapper"

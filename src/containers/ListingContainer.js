@@ -2,60 +2,92 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from 'redux';
 
-import { fetchListing } from "../actions/listingActions"
+import { fetchAll } from "../actions/asyncActions";
+import { showContent } from "../actions/listingActions";
 
 import "../styles/ImageWrapper.css";
-import Listing from "../components/Listing/Listing"
-import ImageWrapper from "../components/ImageWrapper/ImageWrapper"
+import "../styles/Listing.css";
+
+import ImageWrapper from "../components/ImageWrapper/ImageWrapper";
+import Listing from "../components/Listing/Listing";
+import HostContainer from "./HostContainer";
+
 
 class ListingContainer extends Component {
 
-    componentWillMount() {
-      console.log("listing fetch fired")
-      this.props.fetchListing();
+  componentWillMount() {
+    console.log("listing fetch fired")
+    this.props.fetchAll();
+  }
+
+  showMoreAbout = (e) => {
+    e.preventDefault
+    this.props.showContent();
+  }
+
+  render() {
+
+    const initStyle = {
+      height: "177px",
+      overflowY: "hidden"
     }
 
-    render() {
-      const fetched = this.props.fetched;
-      const oneListing = this.props.listing[0];
-      console.log(oneListing);
+    const expandStyle = {
+      height: "auto"
+    }
 
-      return (
-        <div>
-          {fetched ? (
-            <div>
-              <ImageWrapper listing={oneListing}/>
-              <div className="container main-container">
-                <div className="row">
-                  <div className="col-md-8 listing-column">
-                    <Listing listing={oneListing}/>
-                    <HostContainer />
-                    <Reviews />
-                  </div>
-                  <div className="col-md-4 booking-column">
-                    <BookingContainer />
-                  </div>
-                </div>
-              </div>
+    const fetched = this.props.fetched;
+    const oneListing = this.props.listing[0];
+    const oneHost = this.props.host[0];
+
+
+    if (!fetched) {
+      return null
+    }
+
+    return (
+      <div>
+        <ImageWrapper listing={oneListing}/>
+        <div className="container main-container">
+          <div className="row">
+            <div className="col-md-8 listing-column">
+              <Listing listing={oneListing}
+                host={oneHost}
+                showMore={this.props.showMore}
+                showMoreAbout={this.showMoreAbout}
+                initStyle={initStyle}
+                expandStyle={expandStyle} />
+              <HostContainer host={oneHost} />
+              {/* <Reviews /> */}
             </div>
-          ) : ( <div></div> )}
+            <div className="col-md-4 booking-column">
+              {/* <BookingContainer /> */}
+            </div>
+          </div>
         </div>
-      )
-    }
+      </div>
+    )
+  }
 }
 
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    fetched: state.listing.fetched,
-    listing: state.listing.listing,
-    oneListing: ownProps.listing
+    fetched: state.async.fetched,
+    listing: state.async.listing,
+    host: state.async.host,
+    showMore: state.listing.showMore,
+    oneListing: ownProps.listing,
+    oneHost: ownProps.host,
+    initStyle: ownProps.initStyle,
+    expandStyle: ownProps.expandStyle
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
-    fetchListing: fetchListing
+    fetchAll: fetchAll,
+    showContent: showContent,
   }, dispatch)
 }
 

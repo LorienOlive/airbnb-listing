@@ -1,14 +1,14 @@
 import { combineReducers } from 'redux';
 
 import navigation from "./navigation";
+import async from "./async";
 import listing from "./listing";
-import host from "./host";
 
 
 const rootReducer = combineReducers({
   navigation,
-  listing,
-  host
+  async,
+  listing
 });
 
 export default rootReducer;

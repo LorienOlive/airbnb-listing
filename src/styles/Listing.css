@@ -1,0 +1,93 @@
+.listing-menu {
+  font-family: 'Oxygen', sans-serif;
+  color: #777777;
+  letter-spacing: .5px;
+  width: 50vw;
+  padding: 1vw;
+}
+
+.fa-circle {
+  font-size: 4px;
+  width: 30px;
+}
+
+.listing-menu-item {
+}
+
+.listing-column {
+  font-family: 'Oxygen', sans-serif;
+  color: #484848;
+  letter-spacing: .5px;
+  width: 55vw;
+  margin-left: 0vw;
+}
+
+.header-row {
+  width: 50vw;
+}
+.header-column {
+  width: 42vw;
+  overflow-x: wrap;
+}
+
+.main-header {
+  font-size: 38px;
+  font-weight: 700;
+  width: 42vw;
+  margin-right: none;
+}
+
+.host-thumbnail {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.listing-subheader {
+  font-size: 17.5px;
+  font-weight: 100;
+  color: #777777;
+}
+
+.listing-details {
+  width: 55vw;
+}
+
+.listing-details-item {
+  font-size: 18px;
+  font-weight: 100;
+  color: #777777;
+  width: auto;
+  padding: 0 .45vw 0 .45vw!important;
+}
+
+.listing-details-icon {
+  width: 18px;
+  height: auto;
+  padding-bottom: .5vw;
+}
+
+.listing-details-text {
+  padding: 1vw .5vw 0 .75vw;
+}
+
+.fa-bath {
+  font-size: 17px;
+}
+
+.about-subheader {
+  font-size: 17.5px;
+  padding: 20px 0 13px 0;
+}
+
+.about-paragraph {
+  font-size: 18px;
+  font-weight: 100;
+  color: #777777;
+  letter-spacing: .5px;
+  line-height: 27px;
+}
+
+.about-container {
+  margin-bottom: 5vw;
+}

@@ -14,3 +14,6 @@ export const RECEIVE_HOST = "RECEIVE_HOST";
 
 export const INCREMENT = "INCREMENT";
 export const DECREMENT = "DECREMENT";
+
+export const GET_CHECKIN_DATE = "GET_CHECKIN_DATE";
+export const GET_CHECKOUT_DATE = "GET_CHECKOUT_DATE";

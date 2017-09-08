@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 
 import "../styles/Booking.css"
 
-import BookingForm from "../components/BookingForm";
+import BookingForm from "../components/Booking/BookingForm";
 
 class BookingContainer extends Component {
 
@@ -17,8 +17,8 @@ class BookingContainer extends Component {
     return (
       <div className="container booking-container">
         <div className="booking-header">{listing.price}</div>
-        <BookingForm />
-        <SaveButtonBox />
+        <BookingForm listing={listing}/>
+        {/* <SaveButtonBox /> */}
       </div>
     )
   }

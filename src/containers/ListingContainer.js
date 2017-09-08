@@ -11,6 +11,7 @@ import "../styles/Listing.css";
 import ImageWrapper from "../components/ImageWrapper/ImageWrapper";
 import Listing from "../components/Listing/Listing";
 import HostContainer from "./HostContainer";
+import BookingContainer from "./BookingContainer";
 
 
 class ListingContainer extends Component {
@@ -61,7 +62,7 @@ class ListingContainer extends Component {
               {/* <Reviews /> */}
             </div>
             <div className="col-md-4 booking-column">
-              {/* <BookingContainer /> */}
+              <BookingContainer />
             </div>
           </div>
         </div>

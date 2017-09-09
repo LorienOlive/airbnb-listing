@@ -11,13 +11,14 @@ class BookingContainer extends Component {
 
 
   render() {
-    const host = this.props.host;
-    const listing = this.props.listing;
-
+    const host = this.props.host[0];
+    const listing = this.props.listing[0];
+    console.log(listing)
     return (
-      <div className="container booking-container">
-        <div className="booking-header">{listing.price}</div>
-        <BookingForm listing={listing}/>
+      <div className="booking-container">
+        <div className="booking-header"><span>${listing.description.prices.price}</span> per night</div>
+        <BookingForm listing={listing}
+                     host={host} />
         {/* <SaveButtonBox /> */}
       </div>
     )

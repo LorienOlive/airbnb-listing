@@ -9,12 +9,12 @@ const AboutBody = ({ listing, showMore, initStyle, expandStyle }) => (
     <h4 className="about-subheader">
       The Space
     </h4>
-    <p className="about-paragraph">
+    <span className="about-paragraph">
       {listing.description.space.replace(/&#39;/g,"'").replace(/&quot;/g,'"').split("\n").map(i => {
         return <p>{i}<br/></p>
         }
       )}
-    </p>
+    </span>
     <h4 className="about-subheader">
       Guest Access
     </h4>

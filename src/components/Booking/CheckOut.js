@@ -38,8 +38,8 @@ class CheckOut extends Component {
     const date = this.state.date;
 
     if (this.props.checkInDate) {
-        const checkIn = this.props.checkInDate
-        console.log(this.props.checkInDate)
+        const checkIn = this.props.checkInDate.date
+        console.log(this.props.checkInDate.date)
         console.log(checkIn)
         // const formatDate = checkIn.format()
         initDate = moment(checkIn).add('days', minStay).format("MM/DD/YYYY")
@@ -58,18 +58,9 @@ class CheckOut extends Component {
         anchorDirection={ANCHOR_LEFT}
         numberOfMonths={1}
         keepOpenOnDateSelect={false}
-        minimumNights={minStay}
       />
     )
   }
-
-  // componentWillReceiveProps(props, nextProps) {
-  //
-  // }
-  //
-  // const newDate = moment(this.props.checkInDate).add('days', minStay).format("MM/DD/YYYY");
-
-
 }
 
 export default CheckOut;

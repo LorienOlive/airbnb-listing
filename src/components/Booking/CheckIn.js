@@ -48,8 +48,6 @@ class CheckIn extends Component {
         anchorDirection={ANCHOR_LEFT}
         numberOfMonths={1}
         keepOpenOnDateSelect={false}
-        minimumNights={this.props.listing.description.availability.min_stay}
-        // isDayHighlighted={(date) => {}}
       />
     )
   }

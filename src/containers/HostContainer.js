@@ -4,9 +4,9 @@ class HostContainer extends Component {
 
   render() {
     const host = this.props.host;
-    
+
     return (
-      <div classname="container host-container">
+      <div className="container host-container">
 
       </div>
     )

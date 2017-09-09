@@ -8,12 +8,19 @@ export const REQUEST_LISTING = "REQUEST_LISTING";
 export const FETCH_LISTING = "FETCH_LISTING";
 export const RECEIVE_LISTING = "RECEIVE_LISTING";
 
+
 export const REQUEST_HOST = "REQUEST_HOST";
 export const FETCH_HOST = "FETCH_HOST";
 export const RECEIVE_HOST = "RECEIVE_HOST";
 
+export const RECEIVE_ALL = "RECEIVE_ALL"
+
 export const INCREMENT = "INCREMENT";
 export const DECREMENT = "DECREMENT";
 
+export const GET_GUEST_TOTAL = "GET_GUEST_TOTAL";
+
 export const GET_CHECKIN_DATE = "GET_CHECKIN_DATE";
 export const GET_CHECKOUT_DATE = "GET_CHECKOUT_DATE";
+
+export const GET_TOTAL_PRICE = "GET_TOTAL_PRICE"

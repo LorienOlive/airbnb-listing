@@ -52,7 +52,7 @@ const fetchHost = () => {
 
 export const fetchAll = () => {
   return (dispatch) => {
-    dispatch(fetchListing()),
-    dispatch(fetchHost())
+    dispatch(fetchHost()),
+    dispatch(fetchListing())
   }
 }

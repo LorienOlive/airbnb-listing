@@ -1,4 +1,69 @@
 .booking-container {
-  width: 315px;
+  width: 345px;
   height: 475px;
+  border: solid 1.5px #cccccc;
+  margin: -55px 0 0 4vw;
+  position: relative;
+  z-index: 1000;
+}
+
+.booking-header {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #FFFFFF;
+  letter-spacing: .9px;
+  height: 55px;
+  width: 345px;
+  background-color: rgba(70, 70, 70, .9);
+  text-align: left;
+  padding: .8vw 1.75vw .6vw 1.75vw;
+  position: relative;
+  z-index: 1000;
+}
+
+.booking-header span {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.datepicker-container {
+  margin: 0!important;
+  padding: 0!important;
+}
+
+.datepicker-row {
+  padding: 1.5vw .5vw 1vw 2.25vw!important;
+  width: 345px;
+  height: 150px;
+}
+
+.check-date {
+  font-size: 16px;
+
+  color: #757575;
+  letter-spacing: .5px;
+  margin: 0!important;
+  padding: 0!important;
+}
+
+.booking-checkin-label {
+  font-weight: 300!important;
+}
+
+.booking-checkout-label {
+  font-weight: 300!important;
+}
+
+.SingleDatePickerInput {
+  font-size: 18px;
+  width: 155px;
+}
+
+.DateInput {
+  font-weight: 300!important;
+}
+
+.guest-dropdown-button {
+  width: 285px;
 }

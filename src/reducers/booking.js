@@ -3,11 +3,12 @@ import * as types from "../static/actionTypes";
 import moment from "moment";
 
 const intialState = {
-  guests: 1,
+  totalGuests: 1,
+  totalGuests: 1,
   checkInDate: null,
   checkOutDate: null,
   setCheckIn: false,
-  setCheckOut: false
+  setCheckOut: false,
 }
 
 
@@ -17,13 +18,13 @@ const booking = (state = intialState, action) => {
       console.log("increment successful");
       return {
         ...state,
-        guests: state.guests + action.payload
+        totalGuests: state.totalGuests + action.payload
       }
     case types.DECREMENT:
       console.log("decrement successful");
       return {
         ...state,
-        guests: state.guests - action.payload
+        totalGuests: state.totalGuests + action.payload
       }
     case types.GET_CHECKIN_DATE:
       console.log(action.payload)

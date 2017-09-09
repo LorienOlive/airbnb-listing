@@ -7,11 +7,12 @@ import { showContent } from "../actions/listingActions";
 
 import "../styles/ImageWrapper.css";
 import "../styles/Listing.css";
+import "../styles/Booking.css"
 
 import ImageWrapper from "../components/ImageWrapper/ImageWrapper";
 import Listing from "../components/Listing/Listing";
 import HostContainer from "./HostContainer";
-import BookingContainer from "./BookingContainer";
+import StickyWrapper from "./StickyWrapper";
 
 
 class ListingContainer extends Component {
@@ -21,21 +22,12 @@ class ListingContainer extends Component {
     this.props.fetchAll();
   }
 
-  showMoreAbout = (e) => {
-    e.preventDefault
-    this.props.showContent();
+  showMoreAmen = (e) => {
+      e.preventDefault
+      this.props.showContent();
   }
 
   render() {
-
-    const initStyle = {
-      height: "177px",
-      overflowY: "hidden"
-    }
-
-    const expandStyle = {
-      height: "auto"
-    }
 
     const fetched = this.props.fetched;
     const oneListing = this.props.listing[0];
@@ -54,15 +46,14 @@ class ListingContainer extends Component {
             <div className="col-md-8 listing-column">
               <Listing listing={oneListing}
                 host={oneHost}
-                showMore={this.props.showMore}
-                showMoreAbout={this.showMoreAbout}
-                initStyle={initStyle}
-                expandStyle={expandStyle} />
+              />
               <HostContainer host={oneHost} />
               {/* <Reviews /> */}
             </div>
             <div className="col-md-4 booking-column">
-              <BookingContainer />
+              <StickyWrapper host={oneHost}
+                listing={oneListing}
+              />
             </div>
           </div>
         </div>
@@ -77,18 +68,14 @@ const mapStateToProps = (state, ownProps) => {
     fetched: state.async.fetched,
     listing: state.async.listing,
     host: state.async.host,
-    showMore: state.listing.showMore,
     oneListing: ownProps.listing,
     oneHost: ownProps.host,
-    initStyle: ownProps.initStyle,
-    expandStyle: ownProps.expandStyle
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
     fetchAll: fetchAll,
-    showContent: showContent,
   }, dispatch)
 }
 

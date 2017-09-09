@@ -1,33 +1,68 @@
 import React, { Component } from 'react';
 
 
-const AboutBody = ({ listing, showMore, initStyle, expandStyle }) => (
-  <div className="about-container" style={!showMore ? initStyle : expandStyle} >
-    <h3 className="about-header">
-      About this listing
-    </h3>
-    <h4 className="about-subheader">
-      The Space
-    </h4>
-    <span className="about-paragraph">
-      {listing.description.space.replace(/&#39;/g,"'").replace(/&quot;/g,'"').split("\n").map(i => {
-        return <p>{i}<br/></p>
-        }
-      )}
-    </span>
-    <h4 className="about-subheader">
-      Guest Access
-    </h4>
-    <p className="about-paragraph">
-      {listing.description.guest_access}
-    </p>
-    <h4 className="about-subheader">
-      Interaction with guests
-    </h4>
-    <p className="about-paragraph">
-      {listing.description.interaction}
-    </p>
-  </div>
-)
+class AboutBody extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      showMore: false
+    }
+  }
+
+  showMoreAbout = (e) => {
+    e.preventDefault
+    this.setState({showMore: true })
+  }
+
+  render() {
+    const listing = this.props.listing;
+    
+    const initStyle = {
+      height: "177px",
+      overflowY: "hidden"
+    }
+
+    const expandStyle = {
+      height: "auto"
+    }
+
+    return (
+      <div>
+        <div className="about-container" style={this.state.showMore ? expandStyle : initStyle} >
+          <h3 className="about-header">
+            About this listing
+          </h3>
+          <h4 className="about-subheader">
+            The Space
+          </h4>
+          <span className="about-paragraph">
+            {listing.description.space.replace(/&#39;/g,"'").replace(/&quot;/g,'"').split("\n").map(i => {
+              return <p>{i}<br/></p>
+              }
+            )}
+          </span>
+          <h4 className="about-subheader">
+            Guest Access
+          </h4>
+          <p className="about-paragraph">
+            {listing.description.guest_access}
+          </p>
+          <h4 className="about-subheader">
+            Interaction with guests
+          </h4>
+          <p className="about-paragraph">
+            {listing.description.interaction}
+          </p>
+        </div>
+        {!this.state.showMore ? (
+          <div>
+            <a className="show-more" onClick={this.showMoreAbout}>+ More</a>
+          </div>
+        ) : ( null )}
+      </div>
+    )
+  }
+}
 
 export default AboutBody;

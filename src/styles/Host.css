@@ -1,0 +1,29 @@
+.host-container {
+  width: 780px;
+}
+
+
+.verified-badge:empty {
+  display: visible!important;
+}
+
+.verified-badge {
+  background-color: none!important;
+  width: 35px!important;
+  height: 35px!important;
+}
+
+.host-description {
+  width: 760px;
+}
+
+.map-container {
+  width: 1050;
+  height: 750px;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-box {
+  position: absolute;
+}

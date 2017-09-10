@@ -47,6 +47,7 @@ class Amenities extends Component {
     const listing = this.props.listing;
 
     const initStyle = {
+      width: "525px",
       height: "110px",
       overflowY: "hidden",
       overflowX: "auto",
@@ -61,11 +62,11 @@ class Amenities extends Component {
       <div className="details">
         <div className="container details-container">
           { listing.description.amenities ? (
-            <div className="row details-row" style={this.state.showMore ? expandStyle : initStyle}>
+            <div className="row details-row">
               <div className="col-md-2 details-header-column">
                 <h3 className="details-header">Amenities</h3>
               </div>
-              <div className="col-md-10 details-content-column">
+              <div className="col-md-10 details-content-column" style={this.state.showMore ? expandStyle : initStyle}>
                 <div className="row amenities-row">
                   <div className="col-md-5 left-amenities-column">
                     <ul className="left-amentities">
@@ -228,7 +229,7 @@ class Amenities extends Component {
                       </li>
                     </ul>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-6 right-amentities-column">
                     <ul className="right-amentities">
                       <li className="container amenities-item">
                         <div className="row">

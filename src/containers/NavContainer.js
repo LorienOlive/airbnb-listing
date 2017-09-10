@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { connect } from 'react-redux';
 
 import NavBar from "../components/Header/NavBar"
 
@@ -15,12 +14,5 @@ class NavContainer extends Component {
   }
 }
 
-const MapStateToProps = (state) => {
 
-}
-
-const MapDispatchToProps = (state) => {
-  
-}
-
-export default connect(MapStateToProps, MapDispatchToProps)(NavContainer);
+export default NavContainer;

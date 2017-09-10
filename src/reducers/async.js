@@ -1,10 +1,15 @@
 import * as types from "../static/actionTypes";
 
 const initialState = {
-  fetching: false,
-  fetched: false,
+  fetchingListing: false,
+  fetchedListing: false,
+  fetchingHost: false,
+  fetchedHost: false,
+  fetchingReviews: false,
+  fetchedReviews: false,
   listing: [],
-  host: []
+  host: [],
+  reviews: [],
 }
 
 const async = (state=initialState, action) => {
@@ -12,35 +17,60 @@ const async = (state=initialState, action) => {
     case types.REQUEST_LISTING:
       return {
         ...state,
-        fetching: true,
+        fetchingListing: true,
+        fetchedListing: false
       }
     case types.FETCH_LISTING:
     console.log("listing fetch initiated")
       return {
         ...state,
-        fetching: false,
+        fetchingListing: false,
+        fetchedListing: true,
         listing: action.payload
       }
     case types.RECEIVE_LISTING:
       return {
         ...state,
-        fetched: true,
+        fetchingListing: false,
+        fetchedListing: true,
         payload: action.payload
       }
     case types.REQUEST_HOST:
       return {
         ...state,
-        fetching: true,
-        fetched: false
+        fetchingHost: true,
+        fetchedHost: false
       }
     case types.FETCH_HOST:
-    console.log("host fetch initiated")
+    console.log(action.payload)
       return {
         ...state,
-        fetching: false,
+        fetchingHost: false,
+        fetchedHost: true,
         host: action.payload
       }
     case types.RECEIVE_HOST:
+      return {
+        ...state,
+        fetchingHost: false,
+        fetchedHost: true,
+        payload: action.payload
+      }
+    case types.REQUEST_REVIEWS:
+      return {
+        ...state,
+        fetchingReviews: true,
+        fetchedReviews: false
+      }
+    case types.FETCH_REVIEWS:
+    console.log("review fetch initiated")
+      return {
+        ...state,
+        fetchingReviews: false,
+        fetchedReviews: true,
+        reviews: action.payload
+      }
+    case types.RECEIVE_REVIEWS:
       return {
         ...state,
         payload: action.payload

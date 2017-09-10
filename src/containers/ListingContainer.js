@@ -3,16 +3,18 @@ import { connect } from "react-redux";
 import { bindActionCreators } from 'redux';
 
 import { fetchAll } from "../actions/asyncActions";
-import { showContent } from "../actions/listingActions";
 
 import "../styles/ImageWrapper.css";
 import "../styles/Listing.css";
-import "../styles/Booking.css"
+import "../styles/Booking.css";
+import "../styles/SimilarListings.css";
 
 import ImageWrapper from "../components/ImageWrapper/ImageWrapper";
 import Listing from "../components/Listing/Listing";
 import HostContainer from "./HostContainer";
 import StickyWrapper from "./StickyWrapper";
+import ReviewsContainer from "./ReviewsContainer";
+import SimilarListingsContainer from "./SimilarListingsContainer";
 
 
 class ListingContainer extends Component {
@@ -22,19 +24,15 @@ class ListingContainer extends Component {
     this.props.fetchAll();
   }
 
-  showMoreAmen = (e) => {
-      e.preventDefault
-      this.props.showContent();
-  }
-
   render() {
 
-    const fetched = this.props.fetched;
+    const fetchedListing = this.props.fetchedListing;
+    const fetchedHost = this.props.fetchedHost;
     const oneListing = this.props.listing[0];
     const oneHost = this.props.host[0];
 
 
-    if (!fetched) {
+    if (!fetchedHost || !fetchedListing) {
       return null
     }
 
@@ -42,20 +40,26 @@ class ListingContainer extends Component {
       <div>
         <ImageWrapper listing={oneListing}/>
         <div className="container main-container">
-          <div className="row">
+          <div className="row main-row">
             <div className="col-md-8 listing-column">
-              <Listing listing={oneListing}
+              <Listing
+                listing={oneListing}
                 host={oneHost}
               />
+              <ReviewsContainer />
               <HostContainer host={oneHost} />
-              {/* <Reviews /> */}
             </div>
             <div className="col-md-4 booking-column">
-              <StickyWrapper host={oneHost}
+              <StickyWrapper
+                host={oneHost}
                 listing={oneListing}
               />
             </div>
           </div>
+            <SimilarListingsContainer
+              listing={oneListing}
+              host={oneHost}
+            />
         </div>
       </div>
     )
@@ -65,7 +69,8 @@ class ListingContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    fetched: state.async.fetched,
+    fetchedListing: state.async.fetchedListing,
+    fetchedHost: state.async.fetchedHost,
     listing: state.async.listing,
     host: state.async.host,
     oneListing: ownProps.listing,

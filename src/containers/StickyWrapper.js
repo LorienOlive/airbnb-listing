@@ -14,7 +14,6 @@ class StickyWrapper extends Component {
         <Sticky>
           {
             ({ isSticky, wasSticky, style, distanceFromTop, distanceFromBottom, calculatedHeight }) => {
-              console.log({ isSticky, wasSticky, style, distanceFromTop, distanceFromBottom, calculatedHeight });
               return <BookingContainer host={host} listing={listing} />
             }
           }

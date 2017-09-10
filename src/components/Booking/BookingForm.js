@@ -76,6 +76,7 @@ class BookingForm extends Component {
             <p className="host-message-header">
               This is a rare find
             </p>
+            <img className="diamond-icon" src="https://a0.muscache.com/airbnb/static/page3/icon-diamond-bd59d3c1952fe7b348f8a5dabe1d7602.svg" />
             <p className="host-message-body">
               {host.name}'s place is usually booked
             </p>

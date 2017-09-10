@@ -11,6 +11,10 @@ export const RECEIVE_HOST = "RECEIVE_HOST";
 
 export const RECEIVE_ALL = "RECEIVE_ALL"
 
+export const REQUEST_REVIEWS = "REQUEST_REVIEWS";
+export const FETCH_REVIEWS = "FETCH_REVIEWS";
+export const RECEIVE_REVIEWS = "RECEIVE_REVIEWS";
+
 export const INCREMENT = "INCREMENT";
 export const DECREMENT = "DECREMENT";
 

@@ -1,0 +1,10 @@
+.similarContainer {
+  height: 350px;
+  width: 1200px;
+  overflow-x: hidden;
+}
+
+.simList_img {
+  width: 335px;
+  height: 220px;
+}

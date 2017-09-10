@@ -17,7 +17,7 @@ class AboutBody extends Component {
 
   render() {
     const listing = this.props.listing;
-    
+    console.log(listing)
     const initStyle = {
       height: "177px",
       overflowY: "hidden"
@@ -37,7 +37,7 @@ class AboutBody extends Component {
             The Space
           </h4>
           <span className="about-paragraph">
-            {listing.description.space.replace(/&#39;/g,"'").replace(/&quot;/g,'"').split("\n").map(i => {
+            {listing.space.replace(/&#39;/g,"'").replace(/&quot;/g,'"').split("\n").map(i => {
               return <p>{i}<br/></p>
               }
             )}
@@ -46,13 +46,13 @@ class AboutBody extends Component {
             Guest Access
           </h4>
           <p className="about-paragraph">
-            {listing.description.guest_access}
+            {listing.guest_access}
           </p>
           <h4 className="about-subheader">
             Interaction with guests
           </h4>
           <p className="about-paragraph">
-            {listing.description.interaction}
+            {listing.interaction}
           </p>
         </div>
         {!this.state.showMore ? (

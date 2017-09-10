@@ -4,8 +4,7 @@ import "../styles/App.css";
 
 import NavContainer from "./NavContainer";
 import ListingContainer from "./ListingContainer";
-// import BookingContainer from "./BookingContainer";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 
 
 class App extends Component {
@@ -17,7 +16,7 @@ class App extends Component {
         <div className="row">
           <ListingContainer />
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     );
   }

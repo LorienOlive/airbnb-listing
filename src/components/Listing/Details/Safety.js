@@ -9,7 +9,7 @@ const Safety = ({ listing }) => (
             <h3 className="details-header">Safety Features</h3>
           </div>
           <div className="col-md-10 details-content-column">
-            <p className="details-reg-text">{listing.description.safety_features}</p>
+            <p className="details-text safety">{listing.description.safety_features}</p>
           </div>
         </div>
       </div>

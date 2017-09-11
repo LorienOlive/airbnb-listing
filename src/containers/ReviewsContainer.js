@@ -26,7 +26,7 @@ class ReviewsContainer extends Component {
     }
 
     return (
-      <div className="reviews-container">
+      <div className="reviews-container" id="reviews">
         <Reviews reviews={reviews}
           listing={listing}
         />

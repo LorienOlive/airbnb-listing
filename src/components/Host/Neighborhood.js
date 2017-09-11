@@ -9,7 +9,7 @@ class Neighborhood extends Component {
   render() {
     const host = this.props.host;
     return (
-      <div className="container neighborhood-container">
+      <div className="container neighborhood-container" id="location">
         <h3 className="neighborhood-header">
           {host.name}'s home is located in {host.location.city}, {host.location.state}, {host.location.country}
         </h3>

@@ -18,7 +18,8 @@ class HouseRules extends Component {
     const listing = this.props.listing;
 
     const initStyle = {
-      height: "110px",
+      height: "360px",
+      width: "525px",
       overflowY: "hidden"
     }
 
@@ -28,13 +29,14 @@ class HouseRules extends Component {
     return (
       <div className="container details-container">
         { listing.description.house_rules ? (
-          <div>
             <div className="row details-row">
+              <div>
               <div className="col-md-2 details-header-column">
                 <h3 className="details-header">House Rules</h3>
               </div>
-              <div className="col-md-10 details-content-column" style={this.state.showMore ? expandStyle : initStyle}>
-                <div className="row prices-top-row">
+              <div className="col-md-10 details-content-column">
+                <div style={this.state.showMore ? expandStyle : initStyle}>
+                <div className="row rules-top-row">
                   <ul className="rules-list">
                     <li className="rules-list-item">
                       {listing.description.house_rules.smoking}
@@ -60,15 +62,16 @@ class HouseRules extends Component {
                   </span>
                 </div>
               </div>
-            </div>
-            <div>
-              {!this.state.showMore ? (
-                <div>
-                  <a className="show-more amenities" onClick={this.showMoreRules}>+ See all rules</a>
-                </div>
-              ) : ( null )}
+              <div>
+                {!this.state.showMore ? (
+                  <div>
+                    <a className="show-more rules" onClick={this.showMoreRules}>+ See all rules</a>
+                  </div>
+                ) : ( null )}
+              </div>
             </div>
           </div>
+        </div>
           ) : (
             <div></div>
           )}

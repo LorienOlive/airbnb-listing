@@ -13,10 +13,10 @@ const HostHeader = ({ host, languages }) => (
       </a>
     </div>
     <div className="host-header-container">
-      <h2 className="host-header">Hosted by {host.name}</h2>
-      <div className="container">
+      <h3 className="host-header">Hosted by {host.name}</h3>
+      <div className="container extra-container">
         <div className="row host-subheader-row">
-          <div className="col-md-2 host-subheader">
+          <div className="col-md-3 host-subheader">
             <p className="host-subheader-text">
               {host.location.city}, {host.location.country}
             </p>
@@ -30,14 +30,14 @@ const HostHeader = ({ host, languages }) => (
             </p>
           </div>
         </div>
-        <div className="row host-subheader-row">
-          <div className="col-md-2 host-subheader">
-            <a className="host-reviews" href="https://www.airbnb.com/users/show/1575174#reviews">
+        <div className="row host-button-row">
+          <div className="col-md-2 host-button-column">
+            <a className="host-reviews-button" href="https://www.airbnb.com/users/show/1575174#reviews">
               {host.reviews}
             </a>
             <p className="host-label">Reviews</p>
           </div>
-          <div className="col-md-2 host-header">
+          <div className="col-md-2 host-button-column">
             <img className="verified-badge" src={verified} />
             <p className="host-label">Verified</p>
           </div>
@@ -48,11 +48,11 @@ const HostHeader = ({ host, languages }) => (
           </p>
         </div>
       </div>
-      <button className="host-contact">Contact Host</button>
+      <button className="btn host-contact">Contact Host</button>
       <ul className="host-details-list">
         <li>
           <p className="host-details-item">
-            Languages: {languages}
+            Languages: {languages[0]}
           </p>
         </li>
         <li>

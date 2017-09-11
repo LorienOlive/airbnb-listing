@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 const ListingMenu = ({ listing }) => (
   <div className="row listing-menu">
-    <div className="col-md-2 listing-menu-item">
+    <div className="col-md-2 listing-menu-item overview">
       <a href="#overview">Overview</a>
     </div>
     <div className="col-md-1 listing-menu-bullet">

@@ -20,7 +20,7 @@ class HostContainer extends Component {
 
     return (
       <div>
-        <div className="container host-container">
+        <div className="container host-container" id="host">
           <HostHeader host={host}
             languages={languages}
           />

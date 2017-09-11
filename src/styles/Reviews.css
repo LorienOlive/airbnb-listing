@@ -1,14 +1,15 @@
 .reviews-container {
-  width: 780px
+  width: 710px
 }
 
 .rating-header-container {
-  width: 780px
+  width: 710px
 }
 
 .subrating-container {
-  width: 780px!important;
-  border-bottom: solid 1px #cccccc;
+  width: 680px!important;
+  padding: 10px 0px 0px 0px;
+  margin: 0px;
 }
 
 .review-container {
@@ -18,4 +19,166 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+.overall-rating-row {
+  width: 680px;
+  border-bottom: solid 1px #cccccc;
+  margin-left: 1px;
+  padding-bottom: 15px;
+}
+
+.overall-rating-title {
+  padding: 0px;
+}
+
+.rating-header-container {
+  padding: 0px;
+}
+
+.overall-rating-header {
+  margin: 0px;
+}
+
+.overall-rating-stars {
+  height: 45px;
+  position: relative;
+}
+
+.overall-stars {
+  font-size: 22px;
+  color: #008489;
+  position: absolute;
+  bottom: 15px;
+}
+
+.overall-rating-search {
+  height: 50px;
+  padding-left: 95px;
+  position: relative;
+}
+
+.search-reviews {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  width: 245px;
+  height: 34px;
+  border: solid .5px #cccccc;
+  border-radius: 25px;
+  padding-left: 30px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.subrating-column {
+  width: 340px;
+}
+
+.subrating-item {
+  width: 340px;
+  padding: 0px;
+}
+
+.subrating-stars {
+  font-size: 22px;
+  color: #008489;
+}
+
+.subrating-item-row {
+  padding: 4px 0 2px 0;
+}
+
+.subrating-label {
+  width: 170px;
+}
+
+.subrating-text {
+  font-size: 17.5px;
+  font-weight: 300;
+  letter-spacing: .5px;
+}
+
+.subrating-stars {
+  width: 170px;
+}
+
+.review-container {
+  font-size: 17.5px;
+  font-weight: 300;
+  color: #484848;
+  width: 680px;
+  padding: 20px 4px 20px 0px;
+  margin: 0px;
+  border-bottom: solid 1px #cccccc;
+
+}
+
+.user-row {
+  width: 250px;
+}
+
+.user-thumbnail {
+  width: 55px;
+  height: 90px;
+  padding: 0px;
+}
+
+.name-date {
+  width: 140px;
+  height: auto;
+}
+
+.user-name {
+  font-weight: 500;
+  margin: 0px;
+}
+
+.review-date {
+  font-size: 16px;
+  margin: 0px;
+}
+
+.button-column {
+  width: 200px;
+  padding-left: 234px;
+}
+
+.flag-review {
+  width: 100px;
+  padding: 0px;
+}
+
+.report-review {
+  font-size: 16px;
+  letter-spacing: .5px;
+  background-color: white;
+  border: none;
+}
+
+.report-review:hover {
+  text-decoration: underline;
+}
+
+.helpful-review {
+  font-size: 16px;
+  letter-spacing: .5px;
+  width: 110px;
+  height: 36px;
+  background-color: white;
+  border: solid 1px #cccccc;
+}
+
+.helpful-review:hover {
+  background-color: #ececec;
+}
+
+.fa-flag-o {
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+.fa-thumbs-o-up {
+  font-size: 18px;
+  padding-right: 4px;
 }

@@ -1,10 +1,111 @@
 .host-container {
-  width: 780px;
+  font-size: 17.5px;
+  font-weight: 300;
+  width: 680px;
+  padding: 0px;
+  margin: 0px;
 }
 
+.extra-container {
+  padding: 0px;
+}
+.host-reviews {
+  margin: 25px 0 0 15px;
+}
+
+.view-other {
+  font-size: 15px;
+  font-weight: 700;
+  color: #484848;
+  width: 180px;
+  height: 40px;
+  text-align: center;
+  border: solid 1px #484848;
+  padding-top: 8px;
+  margin: 20px 0 25px 15px;
+}
+
+.host-header {
+  padding-bottom: 10px
+}
+
+.host-subheader-row {
+  margin-left: 5px;
+}
+
+.host-subheader {
+  font-size: 16px;
+  width: 185px;
+  padding: 0px;
+}
+
+.host-bullet {
+  width: 15px;
+  height: 15px;
+  padding: 0px!important;
+  position: relative;
+}
+
+.host-bullet i {
+  position: absolute;
+  top: 13px;
+}
+
+.host-button-row {
+  padding-top: 5px;
+  margin: 0 0 25px 5px;
+}
+
+.host-button-column {
+  width: 160px;
+  display: flex;
+  flex-flow: row nowrap;
+  padding-left: 0px;
+}
+
+.host-reviews-button {
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: .5px;
+  background-image: -webkit-linear-gradient(120deg, #ffb400 50%, #ffc333 50%);
+  width: 50px;
+  height: 33px;
+  border-radius: 7px;
+  text-align: center;
+  margin: 0px;
+  padding-top: 3px;
+}
+
+.host-label {
+  margin: 4px 0 0 13px;
+}
+
+.host-contact {
+  font-size: 15px;
+  font-weight: 700;
+  color: #008489;
+  background-color: white;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  border: solid 1px #008489;
+  padding-top: 8px;
+  margin: 2px 0 15px 0px;
+}
 
 .verified-badge:empty {
   display: visible!important;
+}
+
+.host-details-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.host-details-item span {
+  font-weight: 600;
+
 }
 
 .verified-badge {

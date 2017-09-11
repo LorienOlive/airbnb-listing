@@ -34,7 +34,7 @@ class AboutBody extends Component {
             About this listing
           </h3>
           <h4 className="about-subheader">
-            The Space
+            The space
           </h4>
           <span className="about-paragraph">
             {listing.space.replace(/&#39;/g,"'").replace(/&quot;/g,'"').split("\n").map(i => {
@@ -43,7 +43,7 @@ class AboutBody extends Component {
             )}
           </span>
           <h4 className="about-subheader">
-            Guest Access
+            Guest access
           </h4>
           <p className="about-paragraph">
             {listing.guest_access}

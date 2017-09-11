@@ -47,7 +47,7 @@ class SubRatings extends Component {
     return (
       <div className="container subrating-container">
         <div className="row subrating-row">
-          <div className="col-md-6 rating-column">
+          <div className="col-md-6 subrating-column">
             <div className="container subrating-item">
               <div className="row subrating-item-row">
                 <div className="col-md-3 subrating-label">
@@ -79,7 +79,7 @@ class SubRatings extends Component {
               </div>
             </div>
           </div>
-          <div className="col-md-6 rating-column">
+          <div className="col-md-6 subrating-column">
             <div className="container subrating-item">
               <div className="row subrating-item-row">
                 <div className="col-md-3 subrating-label">

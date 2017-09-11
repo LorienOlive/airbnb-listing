@@ -29,10 +29,14 @@ class ReviewsBody extends Component {
               <div className="container reviews-buttons-container">
                 <div className="row reviews-buttons-row">
                   <div className="col-md-2 flag-review">
-                    <button>flag</button>
+                    <button className="btn report-review">
+                      <i className="fa fa-flag-o" aria-hidden="true" /> Report
+                    </button>
                   </div>
                   <div className="col-md-2 helpful">
-                    <button>helpful</button>
+                    <button className="btn helpful-review">
+                      <i className="fa fa-thumbs-o-up" aria-hidden="true" /> Helpful
+                    </button>
                   </div>
                 </div>
               </div>

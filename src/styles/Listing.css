@@ -1,9 +1,59 @@
 .listing-menu {
-  font-family: 'Oxygen', sans-serif;
-  color: #777777;
   letter-spacing: .5px;
-  width: 50vw;
-  padding: 1vw;
+  width: 53vw;
+  padding: 20px 0 20px 0;
+  margin-left: 1px;
+  border-bottom: solid 1px #cccccc;
+}
+
+.listing-menu-item a {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16.5px;
+  color: #008489;
+}
+
+.overview a {
+  font-weight: 600;
+  color: #484848;
+}
+
+.listing-menu-item {
+  width: 85px;
+  padding: 0px!important;
+}
+
+.listing-menu-bullet {
+  width: 20px;
+  padding: 0px!important;
+}
+
+.listing-header {
+  padding: 0px;
+}
+
+.listing-subheader-container {
+  padding: 0px 0px 20px 0px;
+}
+
+.listing-subheader {
+  margin-left: 1px;
+}
+
+.listing-subheader-item {
+  width: 151px;
+  padding: 0px!important;
+}
+
+.listing-subheader-bullet {
+  width: 15px;
+  height: 15px;
+  padding: 0px!important;
+  position: relative;
+}
+
+.listing-subheader-bullet i {
+  position: absolute;
+  top: 13px;
 }
 
 .fa-circle {
@@ -11,7 +61,24 @@
   width: 30px;
 }
 
-.listing-menu-item {
+.rating-row {
+  font-size: 16px;
+  color: #008489;
+  width: 120px;
+}
+
+.review-subheader-item {
+  width: 120px;
+  padding: 0px;
+}
+
+.stars {
+  width: 70px;
+  padding: 0px;
+}
+
+.listing-details {
+  margin: 0 0 30px -2px;
 }
 
 .listing-column {
@@ -24,22 +91,31 @@
 
 .header-row {
   width: 50vw;
+  position: relative;
 }
 .header-column {
-  width: 42vw;
+  width: 680px!important;
   overflow-x: wrap;
 }
 
 .main-header {
   font-size: 38px;
   font-weight: 700;
-  width: 42vw;
+  width: 630px;
   margin-right: none;
 }
 
+.thumbnail-column {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 32px;
+  right: -60px;
+}
+
 .host-thumbnail {
-  width: 70px;
-  height: 70px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
 }
 
@@ -94,12 +170,14 @@
 }
 
 .show-more {
-  font-size: 19px;
-  color: #00A699;
+  display: block;
+  font-size: 18px;
+  color: #008489;
+  margin-bottom: 25px;
 }
 
 .show-more:hover {
-  color: #00A699;
+  color: #008489;
   cursor: pointer;
 }
 
@@ -110,15 +188,23 @@
 
 .details-header {
   font-size: 17.5px;
+  margin-top: 10px;
+}
+
+.details-text {
+  font-size: 17.5px;
+  color: #484848;
+  font-weight: 300px;
 }
 
 .details-header-column {
   width: 175px;
 }
+
 .details-content-column {
   width: 525px;
   border-bottom: solid 1px #cccccc;
-  margin-right: 0!important;
+  padding-left: 0px!important;
 }
 
 .details-row {
@@ -132,32 +218,139 @@
 }
 
 .amenities-item {
+  height: 40px;
   width: 300px;
   list-style: none;
   padding-left: 0px!important;
 }
 
+.amenities-item .row {
+  height: 40px;
+}
+
 .amenities-img {
   width: 40px;
-  padding: 7px 7px 0px 7px!important;
+  padding: 0px 7px 0px 7px!important;
 }
 .amenities-icon {
   width: 40px;
   height: auto;
 }
 
-.left-amenities {
-  padding: none!important;
-}
-
 .right-amenities-column {
-  padding-left: 20px!important;
+  padding: 0px 0 0 20px!important;
 }
 
 .right-family-amenities {
   padding-top: 50px;
 }
 
-.show-more.amenities {
-  margin-left: 150px;
+.left-amenities {
+  padding: 0px!important;
+}
+
+.prices-top-row {
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.prices-bottom-row {
+  font-weight: 300;
+  font-size: 15.5px;
+  width: 525px;
+  margin-bottom: 20px;
+}
+
+.prices-strong-text {
+  font-weight: 600;
+  margin: 0px;
+}
+
+.prices-reg-text {
+  margin: 0px;
+}
+
+.prices-link {
+  font-weight: 600;
+  color: #008489;
+}
+
+.prices-link:hover {
+  color: #008489;
+}
+
+.sleeping-icon {
+  width: 83px;
+  height: 70px;
+  margin-left: -10px;
+}
+
+.sleeping {
+  margin: 0px
+}
+
+.rules-list {
+  width: 480px;
+  padding: 0 0 20px 0;
+  margin: 17px 0 20px 18px;
+}
+
+.rules-list-item {
+  list-style: none;
+  padding: 3px 0 3px 0;
+}
+.rules-top-row, .rules-paragraph {
+  font-weight: 300;
+  font-size: 17.5px;
+}
+.rules-paragraph p {
+  width: 525px!important;
+  margin-left: 18px;
+}
+
+.cancellations {
+  color: #484848;
+  font-weight: 300;
+  width: 525px;
+}
+
+.cancellations-link {
+  display: block;
+  font-size: 19px;
+  font-weight: 500;
+  color: #008489;
+  padding: 15px 0 25px 0;
+}
+
+.cancellations-link:hover {
+  color: #008489;
+}
+
+.safety {
+  color: #484848;
+  font-weight: 300;
+  padding: 7px 0 22px 0;
+}
+
+.availability span {
+  font-weight: 500;
+}
+
+.availability {
+  padding: 7px 0 20px 0!important;
+  border: none!important;
+}
+
+.availability-text{
+  font-weight: 300;
+}
+
+.availability-link {
+  font-size: 17.5px;
+  font-weight: 500;
+  color: #008489;
+}
+
+.availability-link:hover {
+  color: #008489;
 }

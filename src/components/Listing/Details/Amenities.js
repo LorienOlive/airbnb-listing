@@ -66,10 +66,11 @@ class Amenities extends Component {
               <div className="col-md-2 details-header-column">
                 <h3 className="details-header">Amenities</h3>
               </div>
-              <div className="col-md-10 details-content-column" style={this.state.showMore ? expandStyle : initStyle}>
+              <div className="col-md-10 details-content-column">
+                <div style={this.state.showMore ? expandStyle : initStyle}> 
                 <div className="row amenities-row">
                   <div className="col-md-5 left-amenities-column">
-                    <ul className="left-amentities">
+                    <ul className="left-amenities">
                       <li className="container amenities-item">
                         <div className="row">
                           <div className="col-md-3 amenities-img">
@@ -229,8 +230,8 @@ class Amenities extends Component {
                       </li>
                     </ul>
                   </div>
-                  <div className="col-md-6 right-amentities-column">
-                    <ul className="right-amentities">
+                  <div className="col-md-6 right-amenities-column">
+                    <ul className="right-amenities">
                       <li className="container amenities-item">
                         <div className="row">
                           <div className="col-md-10">
@@ -558,17 +559,18 @@ class Amenities extends Component {
                   </div>
               </div>
             </div>
+              <div>
+                {!this.state.showMore ? (
+                  <div>
+                    <a className="show-more amenities" onClick={this.showMoreList}>+ More</a>
+                  </div>
+                ) : ( null )}
+              </div>
+            </div>
           </div>
           ) : (
             <div></div>
           )}
-        </div>
-        <div>
-          {!this.state.showMore ? (
-            <div>
-              <a className="show-more amenities" onClick={this.showMoreList}>+ More</a>
-            </div>
-          ) : ( null )}
         </div>
       </div>
     )

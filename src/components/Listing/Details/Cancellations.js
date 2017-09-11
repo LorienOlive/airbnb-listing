@@ -10,7 +10,7 @@ const Cancellations = ({ listing }) => (
           </div>
           <div className="col-md-10 details-content-column">
             <h3 className="details-header">{listing.description.cancellation.policy_type}</h3>
-            <p className="details-reg-text">{listing.description.cancellation.details}</p>
+            <p className="details-text cancellations">{listing.description.cancellation.details}</p>
             <a className="cancellations-link" href="https://www.airbnb.com/home/cancellation_policies#super-strict-60">View Details</a>
           </div>
         </div>

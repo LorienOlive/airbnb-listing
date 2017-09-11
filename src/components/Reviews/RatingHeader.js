@@ -17,9 +17,9 @@ class RatingHeader extends Component {
               <h3 className="overall-rating-header">{listing.reviews} Reviews</h3>
             </div>
             <div className="col-md-3 overall-rating-stars">
-              <div className="row rating-row">{stars}</div>
+              <div className="row overall-stars">{stars}</div>
             </div>
-            <div className="col-md-6 overall-rating-stars">
+            <div className="col-md-6 overall-rating-search">
               <input className="search-reviews" type="text" name="reviews" placeholder="Search reviews" />
             </div>
           </div>

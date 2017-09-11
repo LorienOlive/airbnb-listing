@@ -11,22 +11,26 @@ const ListingHeader = ({ host, listing }) => (
 
   <div className="container listing-header" key={listing.listing_id}>
     <div className="row header-row">
-      <div className="col-md-7 header-column">
+      <div className="col-md-9 header-column">
         <h1 className="main-header">{listing.title}</h1>
       </div>
-      <div className="col-md-1">
+      <div className="col-md-1 thumbnail-column">
         <img className="host-thumbnail" src={host.profile_img} />
       </div>
     </div>
-      <div className="container">
+      <div className="container listing-subheader-container">
         <div className="row listing-subheader">
-          <div className="col-md-3 listing-subheader-item">{listing.type}</div>
-          <div className="listing-subheader-bullet">
-            <i className="fa fa-circle" aria-hidden="true"></i>
+          <div className="col-md-2 listing-subheader-item">{listing.type}</div>
+          <div className="col-md-1 listing-subheader-bullet">
+            <i className="fa fa-circle" aria-hidden="true" />
           </div>
           <div className="col-md-2 listing-subheader-item">{host.location.city}</div>
-          <div className="col-md-2 listing-subheader-item">{listing.reviews}</div>
-          <MainRating listing={listing} />
+          <div className="col-md-2 stars">
+            <MainRating listing={listing} />
+          </div>
+          <div className="col-md-2 review-subheader-item">
+            {listing.reviews} reviews
+          </div>
         </div>
       </div>
       <div className="row listing-details">

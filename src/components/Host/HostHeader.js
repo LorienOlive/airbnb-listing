@@ -52,7 +52,7 @@ const HostHeader = ({ host, languages }) => (
       <ul className="host-details-list">
         <li>
           <p className="host-details-item">
-            Languages: {languages[0]}
+            Languages: <span>{languages[0]}</span>
           </p>
         </li>
         <li>

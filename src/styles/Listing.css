@@ -8,11 +8,11 @@
 
 .listing-menu-item a {
   font-family: 'Oxygen', sans-serif;
-  font-size: 16.5px;
+  font-size: 15.5px;
   color: #008489;
 }
 
-.overview a {
+.listing-menu-item a:active {
   font-weight: 600;
   color: #484848;
 }

@@ -99,13 +99,17 @@
 
 .host-details-list {
   list-style: none;
-  margin: 0px;
+  margin: 0px 0px 40px 0px;
   padding: 0px;
+}
+
+.host-details-item {
+  margin: 0px;
+  padding: 0px
 }
 
 .host-details-item span {
   font-weight: 600;
-
 }
 
 .verified-badge {
@@ -123,8 +127,32 @@
   height: 750px;
   position: relative;
   overflow: hidden;
+  padding: 0px;
+}
+
+.neighborhood-container {
+  padding: 0px;
+}
+
+.neighborhood-header {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.neighborhood-subheader {
+  font-size: 17.5px;
+  font-weight: 300;
+  margin: 20px 0 20px 0;
+}
+
+.guidebook-link {
+  font-size: 17.5px;
+  font-weight: 400;
+  color: #008489;
+  margin: 0 0 20px 0;
 }
 
 .map-box {
   position: absolute;
+  top: 140px;
 }

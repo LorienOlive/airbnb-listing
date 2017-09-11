@@ -11,9 +11,9 @@ class StickyWrapper extends Component {
 
     return (
       <StickyContainer style={{ width: "345px", height: "100vh", marginTop: "-55px" }}>
-        <Sticky>
+        <Sticky topOffset={80}>
           {
-            ({ isSticky, wasSticky, style, distanceFromTop, distanceFromBottom, calculatedHeight }) => {
+            ({ isSticky, wasSticky, style, distanceFromTop, distanceFromBottom, topOffset, calculatedHeight }) => {
               return <BookingContainer host={host} listing={listing} />
             }
           }

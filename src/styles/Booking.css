@@ -30,12 +30,11 @@
 .datepicker-row {
   padding: 1.5vw .5vw 1vw 2.25vw!important;
   width: 345px;
-  height: 150px;
+  height: 120px;
 }
 
 .check-date {
   font-size: 16px;
-
   color: #757575;
   letter-spacing: .5px;
   margin: 0!important;
@@ -59,8 +58,133 @@
   font-weight: 300!important;
 }
 
+.guest-form {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 15px;
+}
+
+.guest-dropdown-label {
+  font-size: 16px;
+  font-weight: 300;
+  color: #757575;
+  letter-spacing: .5px;
+  padding: 0 0 5px 0;
+  margin-left: 15px;
+}
+
 .guest-dropdown-button {
-  width: 285px;
+  height: 40px;
+  width: 310px;
+  border-radius: 0px;
+  margin-left: 15px;
+  text-align: left;
+  position: relative;
+}
+
+.guest-dropdown-button:hover {
+  background-color: white!important;
+}
+
+.guest-dropdown-button:focus {
+  background-color: white!important;
+}
+
+.guest-dropdown-button:active {
+  background-color: white!important;
+}
+
+.guest-tag {
+  width: 150px;
+  padding-right: 30px;
+  margin: 0px!important;
+}
+
+.guest-tag:active {
+  background-color: #99ede6;
+}
+
+.down-caret {
+  text-align: right;
+  position: absolute;
+  left: 273px;
+  z-index: 2000;
+}
+
+.down-caret i {
+  font-size: 25px;
+}
+
+.guest-dropdown-button span {
+  font-size: 16px;
+  font-weight: 300;
+  color: #757575;
+  letter-spacing: .5px;
+}
+
+.guest-dropdown-menu {
+  width: 320px;
+  height: 380px;
+}
+
+.guest-input {
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0px 12px 0 12px;
+}
+
+
+.guest-counter-item {
+  padding: 10px 0 10px 0;
+  position: relative;
+}
+
+.guest-button {
+  font-size: 18px;
+  color: #008489;
+  background-color: white;
+  border: solid 1px #008489;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.guest-button:disabled {
+  color: #75b5b0;
+}
+
+.guest-label-column {
+  width: 220px;
+}
+
+.guest-label {
+  font-size: 25px;
+  font-weight: 400;
+  display: block;
+  padding: 10px 0 0px 20px;
+}
+
+.guest-sublabel {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0px 0 0px 20px
+}
+
+.book-request {
+  font-size: 17.5px;
+  color: white;
+  letter-spacing: .5px;
+  background-color: #ff5a5f;
+  border: none;
+  height: 40px;
+  width: 310px;
+  margin: 20px 15px 20px 15px;
+}
+.book-request:hover {
+  color: white;
 }
 
 .diamond-icon {

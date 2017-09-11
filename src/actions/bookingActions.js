@@ -10,7 +10,7 @@ export function addGuest() {
 
 export function removeGuest() {
   return {
-    type: types.INCREMENT,
+    type: types.DECREMENT,
     payload: 1
   }
 }

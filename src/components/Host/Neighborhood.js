@@ -10,9 +10,10 @@ class Neighborhood extends Component {
     const host = this.props.host;
     return (
       <div className="container neighborhood-container" id="location">
-        <h3 className="neighborhood-header">
+        <h4 className="neighborhood-header">The neighborhood</h4>
+        <p className="neighborhood-subheader">
           {host.name}'s home is located in {host.location.city}, {host.location.state}, {host.location.country}
-        </h3>
+        </p>
         <a className="guidebook-link" href="https://www.airbnb.com/things-to-do/rooms/978139">
          {host.name}'s Guidebook
         </a>
